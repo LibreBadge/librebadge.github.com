@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html><title>LibreBadge</title>
+<link rel="icon" href="librebadge-icon.svg" type="image/svg">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script><body><nav class="navbar navbar-expand-lg navbar-dark content" style="background-color: #343a40d8;">
+  <a class="navbar-brand" href="#"><img src="librebadge-icon.svg"height="30"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">    
+        <li class="nav-item">
+             <a class="navbar-brand" href="http://github.com/LibreBadge/LibreBadge"><img src="github logo-light.svg" height="30"></a>
+        </li>
+    </ul>
+  </div>
+</nav>
+<div class="alert alert-warning" role="alert">
+  LibreBadge is currently in the pre-alpha development phase. Many features that are fundamental to the idea of LibreBadge are still being designed and implemented. Help is needed, visit the github repository to help!
+  <br>
+  This website, the LibreBadge branding, vision and mission statement are also still under construction and help would be much appreciated!
+</div>
+<div class="jumbotron w-50 mx-auto text-light text-center" style="background-color: #343a40d8; margin-top: 12.5%;">
+ <img src="librebadge-full.svg" height="300">
+  <p class="lead">An open-source web based ID Badge solution written in Python Django</p>
+  <a class="btn btn-dark btn-lg" href="http://github.com/LibreBadge/LibreBadge" role="button">Github <img src="github logo-light.svg" height="30"></a>
+</div>
+<div id="gradient" class="background">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<style>
+:root {
+  --background: linear-gradient(150deg, #017BFF 15%, #01a5ff 30%, #27a767 70%, #27A745 95%);
+}
+#gradient {
+  width: 100%;
+  height: 35vw;
+  background: var(--background);
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  transform: skewY(-12deg);
+  transform-origin: 0;
+}
+
+#gradient span:nth-child(1) {
+  grid-column: span 1;
+  background: var(--first);
+}
+#wrapper{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.content{
+    position: relative;
+    z-index: 100;
+}
+
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+</style><div id="content">
+        </div></body>
+</html>
